@@ -1,0 +1,213 @@
+@charset("utf-8");
+body,html {margin:0; padding: 0; height: 100%; box-sizing: border-box; }
+
+
+@font-face {
+  font-family: Adorable;
+  src: url("../fonts/Adorable.otf");
+}
+@font-face {
+  font-family: Bromo;
+  src: url("../fonts/BROMO.otf");
+}
+
+@media screen and (min-width:1201px){
+  #logo { width: 20%; margin-top: 5%; margin-left: 30%; }
+  #cel-img { width: 30%; margin-left: 67%; margin-top: -15%; }
+  .description { width: 40%; margin-left: -30%; margin-top: 15%;}
+  #center-top-content-buttons { margin-top: -10%; margin-left: 28%;}
+  
+  .sobre{width: 70%;}
+  .Download { width: 10%; }
+  
+  #video { width: 70%; height: 80%; }
+  
+  /* form */
+  form{ width: 40%; }
+  #contato { background-size: 100%; }
+  input[type='submit'] { width: 70%; }
+  
+  /*menu*/
+  .menu-item { display: inline-block; }
+  .menu-side { display: none; }
+}
+/*1200px – Desktops, notebooks com monitores widescreen*/
+@media screen and (max-width:1200px){
+  #logo { width: 20%; margin-top: 5%; margin-left: 30%; }
+  #cel-img { width: 30%; margin-left: 67%; margin-top: -15%; }
+  .description { width: 40%; margin-left: -30%; margin-top: 15%;}
+  #center-top-content-buttons { margin-top: -10%; margin-left: 28%;}
+  
+  .sobre{width: 70%;}
+  .Download { width: 14%; }
+  
+  #video { width: 70%; height: 100%; }
+  
+  /* form */
+  form{ width: 40%; }
+  #contato { background-size: 100%; width: 100%;}
+  input[type='submit'] { width: 50%; }
+  
+  /*menu*/
+  .menu-item { display: inline-block; }
+  .menu-side { display: none; }
+}
+
+/*960px – Tablets no formato paisagem e alguns monitores mais antigos*/
+@media screen and (max-width:960px){
+   
+  .sobre{width: 70%;}
+  .Download { width: 14%; }
+  
+  #video { width: 70%; height: 80%; }
+  
+  form{ width: 40%; }
+  
+  /*menu*/
+  .menu-item { display: inline-block; }
+  .menu-side { display: none; }
+}
+
+/*768px – Tablets no formato retrato*/
+@media screen and (max-width:768px){
+  #logo { width: 30%; margin-top: 15%; margin-left: 10%; }
+  #cel-img { width: 50%; margin-left: 45%; margin-top: -35%; }
+  .description { width: 40%; margin-left: -35%; margin-top: 30%;}
+  #center-top-content-buttons { margin-top: -12%; margin-left: 10%;}
+  
+  .sobre{width: 90%;}
+  .Download { width: 22%; }
+  
+  #video { width: 70%; height: 30%; }
+  
+  form{ width: 60%; }
+  
+  /*menu*/
+  .menu-item { display: inline-block; }
+  .menu-side { display: none; }
+}
+
+@media screen and (max-width:570px){
+  #logo { width: 30%; margin-top: 15%; margin-left: 10%; }
+  #cel-img { width: 50%; margin-left: 45%; margin-top: -35%; }
+  .description { width: 40%; margin-left: -35%; margin-top: 30%;}
+  #center-top-content-buttons { margin-top: -12%; margin-left: 10%;  }
+  
+  .sobre{width: 90%;}
+  .Download { width: 22%; }
+  
+  #video { width: 70%; height: 80%; }
+  form{ width: 60%; }
+  
+  /*menu*/
+  .menu-item { display: inline-block; }
+  .menu-side { display: none; }
+}
+
+/*480px – Smartphones no formato paisagem com tela pequena*/
+@media screen and (max-width:480px){
+  .sobre{width: 90%;}
+  .Download { width: 30%; }
+  
+  #video { width: 70%; height: 80%; }
+  
+  form{ width: 60%; }
+  
+  #contato { background-size: 100% 125%; }
+  textarea { height: 4em; }
+  /*menu*/
+  .menu-item { display: none; }
+  .menu-side { display: inline-block; }
+}
+
+
+
+/*320px – Smartphones no formato retrato com tela pequena*/
+@media screen and (max-width:320px){
+  #logo { width: 40%; margin-top: 15%; margin-left: 10%; }
+  #cel-img { width: 50%; margin-left: 50%; margin-top: -35%; }
+  .description { width: 50%; margin-left: -45%; margin-top: 30%;}
+  #center-top-content-buttons { margin-top: -12%; margin-left: 8%;  }
+  
+  .sobre{ width: 90%; }
+  .Download { width: 30%; }
+  
+  #video { width: 70%; height: 80%; }
+  
+  /*form*/
+  form{ width: 80%; }
+  input[type='submit'] { width: 70%; }
+  
+  /*menu*/
+  .menu-item { display: none; }
+  .menu-side { display: inline-block; }
+}
+
+/* Menu */
+#menu { z-index: 1; display: block; width: 100%; /*background-color: rgba(255, 255, 255, .9);*/ position: fixed; top: 0; /*box-shadow: 1px 1px 8px #2b2b2b;*/}
+#menu ul{ list-style:none; text-transform:uppercase;position:relative;}
+#menu li{ padding:2px; margin-left:2px; transition:background-color 1s;}
+#menu a {color: #FFF;text-decoration:none;}
+.menu-ative { border-bottom: 3px solid #0071bc; /* border-radius: 7px; */ }
+
+.menu2 { box-shadow: 1px 1px 8px #191919; }
+
+/*side nav*/
+.sidenav { display: none; height: 100%; width: 100%; position: fixed; z-index: 2; top: 0; left: 0;  background-color: rgba(0, 0, 0, .8); }
+.sidenav ul { list-style-type: none; padding: 0; margin: 6% 0 0; }
+.sidenav li { text-align: center; padding: 10px 0px;  }
+.sidenav li:hover a { border: 2px solid #3285A1; }
+.sidenav a { padding: 5px 15px; text-decoration: none; font-size: 1.5em; color: #FFF; transition: 0.3s; -webkit-transition: 0.3s; }
+.sidenav a:hover, offcanvas a:focus { color: #f1f1f1; }
+.sidenav .closebtn { position: absolute; top: 0; right: 25px; font-size: 2.25em; margin-left: 50px; margin-bottom: 10%; }
+
+
+/* logo */
+#logo { float: left; display: inline-block;}
+/* celphone image*/
+#cel-img { display: inline-block; }
+
+.description { float: left; text-shadow: 0px 1px 8px black; display: inline-block;  }
+
+/* Texto App */
+.texto{font-family:Arial;font-size:18px;text-align:justify;display:block;margin-top:2%;padding: 0px 2%;}
+
+/*conteudo no topo centro*/
+#center-top-content { /*position: absolute;*/ display: block; background: url(../imagens/fundo.jpg);  }
+#center-top-content a { color: #fff; }
+#center-top-content .title { font-size: 28px; display: block; }
+#center-top-content .description { font-size: 20px; text-align: justify; display: inline-block;}
+
+/*buttons top*/
+#center-top-content-buttons { float: left;  width: 50%; display: block; }
+#center-top-content-buttons a { text-align: center; padding: 14px 6%; color: #FFF; background-color: rgba(0, 113, 188, .8); margin-left: 11%; 
+								border-radius: 10px; transition: background-color .5s; -webkit-transition: background-color .5s; }
+#center-top-content-buttons a:hover { background-color: rgba(0, 113, 188, .5); text-decoration: underline;}
+/*Estrutura dos Links*/
+.Download{ border-radius: 10px;  display: block; margin: 0 auto 2%; background-color:#4286f4; color:#ffffff; font-size:20px; padding: 14px 10px; text-align:center; 
+		   font-size:18px; text-decoration:none; transition:background-color .5s; -webkit-transition: background-color .5s; margin-top: 1%; display: block; }
+
+.Download:hover{ background-color: #3b6dbf; text-decoration: underline; }
+
+/* Sobre */
+.sobre{margin-top:3%; margin: 0 auto; text-align:center;display: block;}
+
+/* baixe o App */
+.baixar{font-family:Arial;font-size:18px;text-align:center;display:block;margin-top:4%;}
+
+/* contato */
+#contato { background: url(../imagens/fundo4.jpg); width: 100%; background-size: 100%; display: block;  background-repeat: no-repeat ;}
+#contato div#content { width: 100%;  }
+
+form{display: block; margin: 0 auto;}
+input, textarea{font-family:sans-serif;font-weight:normal;display: block;margin-top: 2%;margin-bottom: 1%;width: 100%;padding: 6px;
+                border-radius: 10px; border: 3px solid darkgray; }
+input:focus, textarea:focus{box-shadow: 0px 0px 3px #3b6dbf;}
+input[type='submit'] { display: block; background-color: #3b6dbf; border: 0px; padding: 14px 8px; color: #FFF; }
+h1{font-weight: 500; text-align:center; font-size: 28px;}
+
+
+/* Rodape */	  
+footer#rodape{ padding: 3px 0; clear:both; width: 100%; display: block; }
+footer#rodape p {text-align:center; text-decoration:none;color: #000;}
+a.link { color: #4CB4CB; text-decoration: none;  }
